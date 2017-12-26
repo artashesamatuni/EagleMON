@@ -1,4 +1,4 @@
-#pragma once
+/*#pragma once
 
 #include "lasote/httpserver/http_middleware.h"
 #include "led.h"
@@ -17,4 +17,4 @@ namespace httpserver {
 			Led myLed;
 	};
 
-} /* namespace httpserver */
+}*/ /* namespace httpserver */

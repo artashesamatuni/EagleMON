@@ -1,5 +1,5 @@
-#ifndef LED_H
-#define LED_H
+#ifndef RELAY_H
+#define RELAY_H
 
 #ifdef __cplusplus
 extern "C" {
@@ -9,11 +9,11 @@ extern "C" {
 
 #include <wiringPi.h>
     
-class Led
+class Relay
 {
 	public:
-		Led(); //default constuctor
-		virtual ~Led(); //default virtual destructor
+		Relay(); //default constuctor
+		virtual ~Relay(); //default virtual destructor
 		void on();
 		void off();
 		
@@ -26,5 +26,5 @@ class Led
 }
 #endif
 
-#endif /* LED_H */
+#endif /* RELAY_H */
 

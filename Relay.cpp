@@ -1,23 +1,23 @@
-#include "led.h"
+#include "Relays.h"
 
-Led::Led()
+Relay::Relay()
 {
 	pin = 0;
 	wiringPiSetup () ;
 	pinMode (pin, OUTPUT) ;
 }
 
-Led::~Led()
+Relay::~Relay()
 {
 
 }
 
-void Led::on()
+void Relay::on()
 {
 	digitalWrite (pin, HIGH);
 }
 
-void Led::off()
+void Relay::off()
 {
 	digitalWrite (pin, LOW);
 }
