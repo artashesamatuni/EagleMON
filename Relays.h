@@ -11,15 +11,15 @@ extern "C" {
     
 class Relay
 {
-	public:
-		Relay(int PinNumber); //default constuctor
-		virtual ~Relay(); //default virtual destructor
-		bool on();
-		bool off();
-                bool state();
+    public:
+        Relay(int PinNumber); //default constuctor
+        virtual ~Relay(); //default virtual destructor
+        bool on();
+        bool off();
+        bool state();
 		
-	private:
-		int pin;
+    private:
+        int pin;
 };
 
 
