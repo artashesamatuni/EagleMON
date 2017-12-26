@@ -52,7 +52,7 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=
+LDLIBSOPTIONS=-I/usr/local/include -L/usr/local/lib -lwiringPi -lpthread
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
