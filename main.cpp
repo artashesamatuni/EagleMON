@@ -32,8 +32,8 @@ int main(void) {
  char headers[] = "HTTP/1.0 200 OK\r\nServer: CPi\r\nContent-type: text/html\r\n\r\n";
  char buffer[2048];
  //char html[] = "<html><head><title>Temperature</title></head><body><p>{\"humidity\":81%,\"airtemperature\":23.5C}</p></body></html>\r\n";
- //char html[] = "<html><head><title>Temperature</title></head><body><p>{\"humidity\":81%,\"airtemperature\":23.5C}</p></body></html>\r\n";
- char html[] = "<!DOCTYPE HTML>\r\n<html>\r\n<br><input type=\"button\" name=\"bl\" value=\"Turn LED ON \" onclick=\"location.href='/ON'\"><br><br><br><br><input type=\"button\" name=\"bl\" value=\"Turn LED OFF\" onclick=\"location.href='/OFF'\"></html>\n";
+ char html[] = "<html><head><title>Temperature</title></head><body><p>{\"humidity\":81%,\"airtemperature\":23.5C}</p></body></html>\r\n";
+ //char html[] = "<!DOCTYPE HTML>\r\n<html>\r\n<br><input type=\"button\" name=\"bl\" value=\"Turn LED ON \" onclick=\"location.href='/ON'\"><br><br><br><br><input type=\"button\" name=\"bl\" value=\"Turn LED OFF\" onclick=\"location.href='/OFF'\"></html>\n";
  char data[2048] = {0};
  snprintf(data, sizeof data, "%s %s", headers, html);
 
@@ -48,5 +48,6 @@ int main(void) {
    close(client_fd); 
   }
  }
+ void web_server_loop();
  return 0;
 }

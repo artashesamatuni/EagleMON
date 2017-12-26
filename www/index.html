@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>EagleMON-T</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="EagleMON-T">
+    <meta name="author" content="EagleMON">
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="spinner.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body class="w3-content" style="max-width:1024px;min-width:550px">
+    <div class="cssload-thecube" data-bind="visible: !initialised()">
+        <div class="cssload-cube cssload-c1"></div>
+        <div class="cssload-cube cssload-c2"></div>
+        <div class="cssload-cube cssload-c4"></div>
+        <div class="cssload-cube cssload-c3"></div>
+    </div>
+    <div class="w3-card-4 w3-light-grey" data-bind="visible: initialised" style="display: none">
+        <div class="w3-row">
+            <div class="w3-quarter">
+                <button data-bind="click: BTN1, text: (BTN1Fetching() ? '&darr;' : (BTN1Success() ? '&darr;' : '&darr;')), disable: BTN1Fetching" class="w3-button w3-small w3-blue">1</button>
+            </div>
+            <div class="w3-quarter">
+                <button data-bind="click: BTN2, text: (BTN2Fetching() ? '&darr;' : (BTN2Success() ? '&darr;' : '&darr;')), disable: BTN2Fetching" class="w3-button w3-small w3-blue">2</button>
+
+            </div>
+            <div class="w3-quarter">
+                <button data-bind="click: BTN3, text: (BTN3Fetching() ? '&darr;' : (BTN3Success() ? '&darr;' : '&darr;')), disable: BTN3Fetching" class="w3-button w3-small w3-blue">3</button>
+
+            </div>
+            <div class="w3-quarter">
+                <button data-bind="click: BTN4, text: (BTN4Fetching() ? '&darr;' : (BTN4Success() ? '&darr;' : '&darr;')), disable: BTN4Fetching" class="w3-button w3-small w3-blue">4</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
