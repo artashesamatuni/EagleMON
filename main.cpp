@@ -11,8 +11,13 @@
 
 
 int main(void) {
-        
-    Relay Relay_1;
+    char *message[3] = {"msss1", "mass2", "mss3"};
+    char array[20] = "Hello World";
+    //printf("%s\n\r",message[2]);
+    printf("text");
+    fflush(stdout);
+    
+    Relay Relay_1(0);
 
     
     for(;;)

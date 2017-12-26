@@ -1,8 +1,8 @@
 #include "Relays.h"
 
-Relay::Relay()
+Relay::Relay(int PinNumber)
 {
-	pin = 0;
+	pin = PinNumber;
 	wiringPiSetup () ;
 	pinMode (pin, OUTPUT) ;
 }
@@ -14,14 +14,14 @@ Relay::~Relay()
 
 bool Relay::on()
 {
-	digitalWrite (pin, HIGH);
-        return true;
+    digitalWrite (pin, HIGH);
+    return true;
 }
 
 bool Relay::off()
 {
-	digitalWrite (pin, LOW);
-        return false;
+    digitalWrite (pin, LOW);
+    return false;
 }
 
 bool Relay::state()
