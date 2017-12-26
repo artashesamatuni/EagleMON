@@ -12,12 +12,14 @@ Relay::~Relay()
 
 }
 
-void Relay::on()
+bool Relay::on()
 {
 	digitalWrite (pin, HIGH);
+        return true;
 }
 
-void Relay::off()
+bool Relay::off()
 {
 	digitalWrite (pin, LOW);
+        return false;
 }

@@ -14,8 +14,8 @@ class Relay
 	public:
 		Relay(); //default constuctor
 		virtual ~Relay(); //default virtual destructor
-		void on();
-		void off();
+		bool on();
+		bool off();
 		
 	private:
 		int pin;
