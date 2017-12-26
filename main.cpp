@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "Relays.h"
+
+
 //#include "lasote/httpserver/http_server.h"
 //#include "server.h"
 
@@ -8,12 +10,24 @@
 //using namespace gip;
 
 
-
 int main(void) {
-    
+        
     Relay Relay_1;
+
     
-    Relay_1.off();
+    for(;;)
+        {
+            if(Relay_1.state())
+            {
+            Relay_1.off();
+            delay(100);
+            }
+            else
+            {
+            Relay_1.on();
+            delay(100);
+            }
+        }
     
         
  	/*MyHttpMiddleware my_mmiddleware;
@@ -22,7 +36,6 @@ int main(void) {
 	HttpServer http_server;
 
 	http_server.run(&my_mmiddleware, &conf);
-*/
-	return 0;
+        */
  return 0;
 }

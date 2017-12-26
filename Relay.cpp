@@ -23,3 +23,8 @@ bool Relay::off()
 	digitalWrite (pin, LOW);
         return false;
 }
+
+bool Relay::state()
+{
+    return digitalRead(pin);
+}

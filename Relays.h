@@ -16,6 +16,7 @@ class Relay
 		virtual ~Relay(); //default virtual destructor
 		bool on();
 		bool off();
+                bool state();
 		
 	private:
 		int pin;
