@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "lasote/httpserver/http_server.h"
-#include "web_server.h"
+#include "server.h"
 
 using namespace httpserver;
 using namespace gip;

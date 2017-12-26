@@ -37,7 +37,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/led.o \
 	${OBJECTDIR}/main.o \
-	${OBJECTDIR}/web_server.o
+	${OBJECTDIR}/server.o
 
 
 # C Compiler Flags
@@ -74,10 +74,10 @@ ${OBJECTDIR}/main.o: main.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
-${OBJECTDIR}/web_server.o: web_server.cpp
+${OBJECTDIR}/server.o: server.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/web_server.o web_server.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/server.o server.cpp
 
 # Subprojects
 .build-subprojects:

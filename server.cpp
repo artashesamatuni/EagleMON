@@ -1,6 +1,3 @@
-#ifndef WEB_SERVER_H
-#define WEB_SERVER_H
-
 #pragma once
 
 #include "lasote/httpserver/http_middleware.h"
@@ -21,9 +18,3 @@ namespace httpserver {
 	};
 
 } /* namespace httpserver */
-
-#ifdef __cplusplus
-}
-#endif
-
-#endif /* WEB_SERVER_H */
