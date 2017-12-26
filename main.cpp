@@ -11,9 +11,9 @@
 
 int main(void) {
     
-    Led newled;
+    Relay Relay_1;
     
-    newled.off();
+    Relay_1.off();
     
         
  	/*MyHttpMiddleware my_mmiddleware;
