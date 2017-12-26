@@ -1,30 +1,37 @@
-#include <Arduino.h>
-#include <ESP8266WiFi.h>
-                     // SPIFFS file-system: store web server html, CSS etc.
-#include <ArduinoJson.h>
+#include <sys/socket.h>
 
-#include "esp.h"
 #include "web_server.h"
+
+
+
+ struct addrinfo hints, *server;
+ memset(&hints, 0, sizeof hints);
+ hints.ai_family =  AF_INET;
+ hints.ai_socktype = SOCK_STREAM;
+ hints.ai_flags = AI_PASSIVE || SOCK_NONBLOCK;
+ getaddrinfo(NULL, "80", &hints, &server);
+
+ int sockfd = socket(server->ai_family, server->ai_socktype, server->ai_protocol);
+ bind(sockfd, server->ai_addr, server->ai_addrlen);
+ listen(sockfd, 10);
+ 
+ struct sockaddr_storage client_addr;
+ socklen_t addr_size = sizeof client_addr;
+ char headers[] = "HTTP/1.0 200 OK\r\nServer: CPi\r\nContent-type: text/html\r\n\r\n";
+ char buffer[2048];
+ 
+ char data[2048] = {0};
+ snprintf(data, sizeof data, "%s %s", headers, html);
+
+
 
 
 
 AsyncWebServer server(80);          //Create class for Web server
 
-bool enableCors = true;
 
-// Event timeouts
-unsigned long wifiRestartTime = 0;
-unsigned long mqttRestartTime = 0;
-unsigned long ntpRestartTime = 0;
-unsigned long systemRestartTime = 0;
-unsigned long systemRebootTime = 0;
 
-// Get running firmware version from build tag environment variable
-#define TEXTIFY(A) #A
-#define ESCAPEQUOTE(A) TEXTIFY(A)
-String currentfirmware = ESCAPEQUOTE(3.0);
 
-FSInfo fs_info;
 // -------------------------------------------------------------------
 // Helper function to perform the standard operations on a request
 // -------------------------------------------------------------------
@@ -58,24 +65,17 @@ void handleHome(AsyncWebServerRequest *request) {
 // -------------------------------------------------------------------
 void handleStatus(AsyncWebServerRequest *request) {
   AsyncResponseStream *response;
-  if (false == requestPreProcess(request, response)) {
-    return;
-  }
+
   DynamicJsonBuffer jsonBuffer;
-  String frame = "";
-  JsonObject& root = jsonBuffer.createObject();
-  JsonArray& networks = root.createNestedArray("networks");
-  JsonArray& rssi = root.createNestedArray("rssi");
-
-
-  root["btn1"] = true;
-  root["btn2"] = true;
-  root["btn3"] = false;
-  root["btn4"] = false;
+String s = "{";
+s += "\"btn1\":\""+"true"+"\",";
+s += "\"btn2\":\""+"true"+"\",";
+s += "\"btn3\":\""+"false"+"\",";
+s += "\"btn4\":\""+"true"+"\"";
+s += "}";
   
-  root.printTo(frame);
   response->setCode(200);
-  response->print(frame);
+  response->print(s);
   request->send(response);
 }
 
@@ -146,15 +146,10 @@ void web_server_setup(void)
 {
 
   // Setup the static files
-  server.serveStatic("/", SPIFFS, "/")
-  .setDefaultFile("index.html")
+  server.serveStatic("/", SPIFFS, "/").setDefaultFile("index.html");
 
   // Start server & server root html /
   server.on("/", handleHome);
-
-  // Handle HTTP web interface button presses
-  server.on("/generate_204", handleHome);  //Android captive portal. Maybe not needed. Might be handled by notFound
-  server.on("/fwlink", handleHome);  //Microsoft captive portal. Maybe not needed. Might be handled by notFound
 
   server.on("/status", handleStatus);
 

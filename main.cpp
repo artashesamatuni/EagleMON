@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <sys/socket.h>
+
 #include <string.h>
 #include <sys/types.h>
 #include <netinet/in.h>
@@ -48,6 +48,6 @@ int main(void) {
    close(client_fd); 
   }
  }
- void web_server_loop();
+ //void web_server_loop();
  return 0;
 }
