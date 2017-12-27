@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/Relay.o \
+	${OBJECTDIR}/interfaces/mcp3204.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/server.o \
 	${OBJECTDIR}/wiringPi/drcSerial.o \
@@ -94,6 +95,11 @@ ${OBJECTDIR}/Relay.o: Relay.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Relay.o Relay.cpp
+
+${OBJECTDIR}/interfaces/mcp3204.o: interfaces/mcp3204.cpp
+	${MKDIR} -p ${OBJECTDIR}/interfaces
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/interfaces/mcp3204.o interfaces/mcp3204.cpp
 
 ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}
