@@ -10,6 +10,7 @@
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
+      <itemPath>config.json</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
@@ -49,6 +50,8 @@
       </item>
       <item path="Relays.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="config.json" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="server.cpp" ex="false" tool="1" flavor2="0">
@@ -79,6 +82,8 @@
       <item path="Relay.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Relays.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="config.json" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
