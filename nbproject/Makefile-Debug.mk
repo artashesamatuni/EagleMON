@@ -35,10 +35,10 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Relay.o \
+	${OBJECTDIR}/interfaces/Relay.o \
 	${OBJECTDIR}/interfaces/mcp3204.o \
-	${OBJECTDIR}/main.o \
-	${OBJECTDIR}/server.o \
+	${OBJECTDIR}/src/main.o \
+	${OBJECTDIR}/src/server.o \
 	${OBJECTDIR}/wiringPi/drcSerial.o \
 	${OBJECTDIR}/wiringPi/max31855.o \
 	${OBJECTDIR}/wiringPi/max5322.o \
@@ -85,31 +85,31 @@ LDLIBSOPTIONS=-I/usr/local/include -L/usr/local/lib -lwiringPi -lpthread
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/eaglemon
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/eaglemon
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/eaglemon: ${OBJECTFILES}
-	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/eaglemon ${OBJECTFILES} ${LDLIBSOPTIONS}
+${CND_DISTDIR}/eaglemon: ${OBJECTFILES}
+	${MKDIR} -p ${CND_DISTDIR}
+	${LINK.cc} -o ${CND_DISTDIR}/eaglemon ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/Relay.o: Relay.cpp
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/interfaces/Relay.o: interfaces/Relay.cpp
+	${MKDIR} -p ${OBJECTDIR}/interfaces
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Relay.o Relay.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/interfaces/Relay.o interfaces/Relay.cpp
 
 ${OBJECTDIR}/interfaces/mcp3204.o: interfaces/mcp3204.cpp
 	${MKDIR} -p ${OBJECTDIR}/interfaces
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/interfaces/mcp3204.o interfaces/mcp3204.cpp
 
-${OBJECTDIR}/main.o: main.cpp
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/src/main.o: src/main.cpp
+	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/main.o src/main.cpp
 
-${OBJECTDIR}/server.o: server.cpp
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/src/server.o: src/server.cpp
+	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/server.o server.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/server.o src/server.cpp
 
 ${OBJECTDIR}/wiringPi/drcSerial.o: wiringPi/drcSerial.c
 	${MKDIR} -p ${OBJECTDIR}/wiringPi

@@ -16,6 +16,8 @@
       <itemPath>html/w3.css</itemPath>
     </logicalFolder>
     <logicalFolder name="interfaces" displayName="interfaces" projectFiles="true">
+      <itemPath>interfaces/Relay.cpp</itemPath>
+      <itemPath>interfaces/Relays.h</itemPath>
       <itemPath>interfaces/mcp3204.cpp</itemPath>
       <itemPath>interfaces/mcp3204.h</itemPath>
     </logicalFolder>
@@ -35,14 +37,16 @@
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
-      <itemPath>config.json</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>Relay.cpp</itemPath>
-      <itemPath>main.cpp</itemPath>
-      <itemPath>server.cpp</itemPath>
+      <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/config.json</itemPath>
+        <itemPath>src/main.cpp</itemPath>
+        <itemPath>src/server.cpp</itemPath>
+        <itemPath>src/server.h</itemPath>
+      </logicalFolder>
     </logicalFolder>
     <logicalFolder name="wiringPi" displayName="wiringPi" projectFiles="true">
       <itemPath>wiringPi/COPYING.LESSER</itemPath>
@@ -118,6 +122,7 @@
     <Elem>json</Elem>
     <Elem>html</Elem>
     <Elem>interfaces</Elem>
+    <Elem>src</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -129,16 +134,13 @@
       </toolsSet>
       <compileType>
         <linkerTool>
+          <output>${CND_DISTDIR}/eaglemon</output>
           <linkerLibItems>
             <linkerOptionItem>-I/usr/local/include -L/usr/local/lib -lwiringPi -lpthread</linkerOptionItem>
           </linkerLibItems>
         </linkerTool>
       </compileType>
-      <item path="Relay.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="Relays.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="config.json" ex="false" tool="3" flavor2="0">
       </item>
       <item path="html/config.js" ex="false" tool="3" flavor2="0">
       </item>
@@ -151,6 +153,10 @@
       <item path="html/spinner.css" ex="false" tool="3" flavor2="0">
       </item>
       <item path="html/w3.css" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="interfaces/Relay.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="interfaces/Relays.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="interfaces/mcp3204.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -178,11 +184,15 @@
       </item>
       <item path="json/writer.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="server.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="server.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/config.json" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/server.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/server.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="wiringPi/COPYING.LESSER" ex="false" tool="3" flavor2="0">
       </item>
@@ -315,11 +325,7 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="Relay.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="Relays.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="config.json" ex="false" tool="3" flavor2="0">
       </item>
       <item path="html/config.js" ex="false" tool="3" flavor2="0">
       </item>
@@ -332,6 +338,10 @@
       <item path="html/spinner.css" ex="false" tool="3" flavor2="0">
       </item>
       <item path="html/w3.css" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="interfaces/Relay.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="interfaces/Relays.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="interfaces/mcp3204.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -359,11 +369,15 @@
       </item>
       <item path="json/writer.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="server.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="server.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/config.json" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/server.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/server.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="wiringPi/COPYING.LESSER" ex="false" tool="3" flavor2="0">
       </item>
