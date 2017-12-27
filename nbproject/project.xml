@@ -12,6 +12,7 @@
             <sourceRootList>
                 <sourceRootElem>wiringPi</sourceRootElem>
                 <sourceRootElem>json</sourceRootElem>
+                <sourceRootElem>html</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

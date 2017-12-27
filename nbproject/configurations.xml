@@ -7,6 +7,14 @@
       <itemPath>Relays.h</itemPath>
       <itemPath>server.h</itemPath>
     </logicalFolder>
+    <logicalFolder name="html" displayName="html" projectFiles="true">
+      <itemPath>html/config.js</itemPath>
+      <itemPath>html/index.html</itemPath>
+      <itemPath>html/lib.js</itemPath>
+      <itemPath>html/logo.png</itemPath>
+      <itemPath>html/spinner.css</itemPath>
+      <itemPath>html/w3.css</itemPath>
+    </logicalFolder>
     <logicalFolder name="json" displayName="json" projectFiles="true">
       <itemPath>json/allocator.h</itemPath>
       <itemPath>json/assertions.h</itemPath>
@@ -104,6 +112,7 @@
   <sourceRootList>
     <Elem>wiringPi</Elem>
     <Elem>json</Elem>
+    <Elem>html</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -125,6 +134,18 @@
       <item path="Relays.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="config.json" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="html/config.js" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="html/index.html" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="html/lib.js" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="html/logo.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="html/spinner.css" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="html/w3.css" ex="false" tool="3" flavor2="0">
       </item>
       <item path="json/allocator.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -290,6 +311,18 @@
       <item path="Relays.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="config.json" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="html/config.js" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="html/index.html" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="html/lib.js" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="html/logo.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="html/spinner.css" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="html/w3.css" ex="false" tool="3" flavor2="0">
       </item>
       <item path="json/allocator.h" ex="false" tool="3" flavor2="0">
       </item>
