@@ -12,34 +12,32 @@ using namespace std;
 //using namespace gip;
 
 
+int ADC_Read(int ch)
+    {
+        mcp3204 ADC("/dev/spidev0.0", SPI_MODE_0, 1000000, 8);     // Init ADC
+        
+        unsigned char data[3];      // data to be sent then received
+        int ADC_val = 0;
+        
+        data[0] = 0b00000110 | ((ch & 0b00000100)>>2);
+        data[1] = ((ch & 0b00000011) << 6) ;
+        data[2] = 0;
+        
+        ADC.spiWriteRead(data, sizeof(data));       // the same buffer is used
+        
+        ADC_val = 0;
+        ADC_val = (data[1]<< 8) & 0b111100000000; //merge data[1] & data[2] to get result
+        ADC_val |=  (data[2] & 0xff);
+        
+        return ADC_val;
+    }
+
+
 int main(void) {
     
-    /*--------------------------SPI ADC Part--------------------------------*/
-    
-    mcp3204 ADC("/dev/spidev0.0", SPI_MODE_0, 1000000, 8);     // Init ADC
-    
-    int i = 5;
-    int ADCVal = 0;
-    int ADCChannel = 0;
-    unsigned char data[3];
- 
-    while(i > 0)
-    {
-        data[0] = 1;  //  first byte transmitted -> start bit
-        data[1] = 0b10000000 |( ((ADCChannel & 7) << 4)); // second byte transmitted -> (SGL/DIF = 1, D2=D1=D0=0)
-        data[2] = 0; // third byte transmitted....don't care
- 
-        ADC.spiWriteRead(data, sizeof(data) );
- 
-        ADCVal = 0;
-                ADCVal = (data[1]<< 8) & 0b1100000000; //merge data[1] & data[2] to get result
-                ADCVal |=  (data[2] & 0xff);
-        sleep(1);
-        cout << "The Result is: " << ADCVal << "\r" <<endl;
-        i--;
-    }
-    
-    
+    int ch1_data = ADC_Read(0);
+    cout << ch1_data << "\r" << endl;
+
     
     /*--------------------------File Read/Write Part--------------------------------*/
 
@@ -47,10 +45,7 @@ int main(void) {
     int n;
     char name [100];
    
-    char *message[3] = {"msss1", "mass2", "mss3"};
-    char array[20] = "Hello World";
-    printf("%s\n\r",message[2]);
-    printf("text");
+    cout << "simple print\r" <<endl;
 
     pFile = fopen ("myconfig.json","w");
     fprintf (pFile, "test");
