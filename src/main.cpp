@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "../interfaces/Relays.h"
 #include "../interfaces/mcp3204.h"
+#include "../interfaces/digital_input.h"
 
 using namespace std;
 
@@ -38,13 +39,13 @@ int main(void) {
     // ADC testing
     int ch1_data = ADC_Read(0);
     cout << ch1_data << "\r" << endl;
+    
+    digital_input Input_1(2, 1);
 
     
     /*--------------------------File Read/Write Part--------------------------------*/
 
     FILE * pFile;
-    int n;
-    char name [100];
    
     cout << "simple print\r" <<endl;
 
@@ -52,7 +53,7 @@ int main(void) {
     fprintf (pFile, "test");
     fclose (pFile);
     
-    fflush(stdout);
+    //fflush(stdout);
 
     
     
@@ -62,6 +63,16 @@ int main(void) {
     
     for(;;)
         {
+            if (Input_1.read())
+            {
+                cout << "Input True\r" <<endl;
+            }
+            else
+            {
+                cout << "Input False\r" <<endl;
+            }
+        
+        
             if(Relay_1.state())
             {
             Relay_1.off();

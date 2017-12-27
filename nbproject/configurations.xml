@@ -4,8 +4,6 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>Relays.h</itemPath>
-      <itemPath>server.h</itemPath>
     </logicalFolder>
     <logicalFolder name="html" displayName="html" projectFiles="true">
       <itemPath>html/config.js</itemPath>
@@ -18,6 +16,8 @@
     <logicalFolder name="interfaces" displayName="interfaces" projectFiles="true">
       <itemPath>interfaces/Relay.cpp</itemPath>
       <itemPath>interfaces/Relays.h</itemPath>
+      <itemPath>interfaces/digital_input.cpp</itemPath>
+      <itemPath>interfaces/digital_input.h</itemPath>
       <itemPath>interfaces/mcp3204.cpp</itemPath>
       <itemPath>interfaces/mcp3204.h</itemPath>
     </logicalFolder>
@@ -138,8 +138,6 @@
           </linkerLibItems>
         </linkerTool>
       </compileType>
-      <item path="Relays.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="html/config.js" ex="false" tool="3" flavor2="0">
       </item>
       <item path="html/index.html" ex="false" tool="3" flavor2="0">
@@ -155,6 +153,10 @@
       <item path="interfaces/Relay.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="interfaces/Relays.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="interfaces/digital_input.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="interfaces/digital_input.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="interfaces/mcp3204.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -181,8 +183,6 @@
       <item path="json/version.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="json/writer.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="server.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/config.json" ex="false" tool="3" flavor2="0">
       </item>
@@ -323,8 +323,6 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="Relays.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="html/config.js" ex="false" tool="3" flavor2="0">
       </item>
       <item path="html/index.html" ex="false" tool="3" flavor2="0">
@@ -340,6 +338,10 @@
       <item path="interfaces/Relay.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="interfaces/Relays.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="interfaces/digital_input.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="interfaces/digital_input.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="interfaces/mcp3204.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -366,8 +368,6 @@
       <item path="json/version.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="json/writer.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="server.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/config.json" ex="false" tool="3" flavor2="0">
       </item>

@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/interfaces/Relay.o \
+	${OBJECTDIR}/interfaces/digital_input.o \
 	${OBJECTDIR}/interfaces/mcp3204.o \
 	${OBJECTDIR}/src/main.o \
 	${OBJECTDIR}/src/server.o \
@@ -95,6 +96,11 @@ ${OBJECTDIR}/interfaces/Relay.o: interfaces/Relay.cpp
 	${MKDIR} -p ${OBJECTDIR}/interfaces
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/interfaces/Relay.o interfaces/Relay.cpp
+
+${OBJECTDIR}/interfaces/digital_input.o: interfaces/digital_input.cpp
+	${MKDIR} -p ${OBJECTDIR}/interfaces
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/interfaces/digital_input.o interfaces/digital_input.cpp
 
 ${OBJECTDIR}/interfaces/mcp3204.o: interfaces/mcp3204.cpp
 	${MKDIR} -p ${OBJECTDIR}/interfaces

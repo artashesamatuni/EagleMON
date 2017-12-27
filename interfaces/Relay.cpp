@@ -2,9 +2,9 @@
 
 Relay::Relay(int PinNumber)
 {
-	pin = PinNumber;
-	wiringPiSetup () ;
-	pinMode (pin, OUTPUT) ;
+    pin = PinNumber;
+    wiringPiSetup () ;
+    pinMode (pin, OUTPUT) ;
 }
 
 Relay::~Relay()
