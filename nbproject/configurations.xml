@@ -7,6 +7,19 @@
       <itemPath>Relays.h</itemPath>
       <itemPath>server.h</itemPath>
     </logicalFolder>
+    <logicalFolder name="json" displayName="json" projectFiles="true">
+      <itemPath>json/allocator.h</itemPath>
+      <itemPath>json/assertions.h</itemPath>
+      <itemPath>json/autolink.h</itemPath>
+      <itemPath>json/config.h</itemPath>
+      <itemPath>json/features.h</itemPath>
+      <itemPath>json/forwards.h</itemPath>
+      <itemPath>json/json.h</itemPath>
+      <itemPath>json/reader.h</itemPath>
+      <itemPath>json/value.h</itemPath>
+      <itemPath>json/version.h</itemPath>
+      <itemPath>json/writer.h</itemPath>
+    </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
@@ -18,6 +31,63 @@
       <itemPath>Relay.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
       <itemPath>server.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="wiringPi" displayName="wiringPi" projectFiles="true">
+      <itemPath>wiringPi/COPYING.LESSER</itemPath>
+      <itemPath>wiringPi/Makefile</itemPath>
+      <itemPath>wiringPi/drcSerial.c</itemPath>
+      <itemPath>wiringPi/drcSerial.h</itemPath>
+      <itemPath>wiringPi/max31855.c</itemPath>
+      <itemPath>wiringPi/max31855.h</itemPath>
+      <itemPath>wiringPi/max5322.c</itemPath>
+      <itemPath>wiringPi/max5322.h</itemPath>
+      <itemPath>wiringPi/mcp23008.c</itemPath>
+      <itemPath>wiringPi/mcp23008.h</itemPath>
+      <itemPath>wiringPi/mcp23016.c</itemPath>
+      <itemPath>wiringPi/mcp23016.h</itemPath>
+      <itemPath>wiringPi/mcp23016reg.h</itemPath>
+      <itemPath>wiringPi/mcp23017.c</itemPath>
+      <itemPath>wiringPi/mcp23017.h</itemPath>
+      <itemPath>wiringPi/mcp23s08.c</itemPath>
+      <itemPath>wiringPi/mcp23s08.h</itemPath>
+      <itemPath>wiringPi/mcp23s17.c</itemPath>
+      <itemPath>wiringPi/mcp23s17.h</itemPath>
+      <itemPath>wiringPi/mcp23x08.h</itemPath>
+      <itemPath>wiringPi/mcp23x0817.h</itemPath>
+      <itemPath>wiringPi/mcp3002.c</itemPath>
+      <itemPath>wiringPi/mcp3002.h</itemPath>
+      <itemPath>wiringPi/mcp3004.c</itemPath>
+      <itemPath>wiringPi/mcp3004.h</itemPath>
+      <itemPath>wiringPi/mcp3422.c</itemPath>
+      <itemPath>wiringPi/mcp3422.h</itemPath>
+      <itemPath>wiringPi/mcp4802.c</itemPath>
+      <itemPath>wiringPi/mcp4802.h</itemPath>
+      <itemPath>wiringPi/pcf8574.c</itemPath>
+      <itemPath>wiringPi/pcf8574.h</itemPath>
+      <itemPath>wiringPi/pcf8591.c</itemPath>
+      <itemPath>wiringPi/pcf8591.h</itemPath>
+      <itemPath>wiringPi/piHiPri.c</itemPath>
+      <itemPath>wiringPi/piThread.c</itemPath>
+      <itemPath>wiringPi/sn3218.c</itemPath>
+      <itemPath>wiringPi/sn3218.h</itemPath>
+      <itemPath>wiringPi/softPwm.c</itemPath>
+      <itemPath>wiringPi/softPwm.h</itemPath>
+      <itemPath>wiringPi/softServo.c</itemPath>
+      <itemPath>wiringPi/softServo.h</itemPath>
+      <itemPath>wiringPi/softTone.c</itemPath>
+      <itemPath>wiringPi/softTone.h</itemPath>
+      <itemPath>wiringPi/sr595.c</itemPath>
+      <itemPath>wiringPi/sr595.h</itemPath>
+      <itemPath>wiringPi/wiringPi.c</itemPath>
+      <itemPath>wiringPi/wiringPi.h</itemPath>
+      <itemPath>wiringPi/wiringPiI2C.c</itemPath>
+      <itemPath>wiringPi/wiringPiI2C.h</itemPath>
+      <itemPath>wiringPi/wiringPiSPI.c</itemPath>
+      <itemPath>wiringPi/wiringPiSPI.h</itemPath>
+      <itemPath>wiringPi/wiringSerial.c</itemPath>
+      <itemPath>wiringPi/wiringSerial.h</itemPath>
+      <itemPath>wiringPi/wiringShift.c</itemPath>
+      <itemPath>wiringPi/wiringShift.h</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -31,6 +101,10 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>wiringPi</Elem>
+    <Elem>json</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="Debug" type="1">
@@ -52,11 +126,143 @@
       </item>
       <item path="config.json" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="json/allocator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="json/assertions.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="json/autolink.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="json/config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="json/features.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="json/forwards.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="json/json.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="json/reader.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="json/value.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="json/version.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="json/writer.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="server.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="server.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/COPYING.LESSER" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/Makefile" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/drcSerial.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/drcSerial.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/max31855.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/max31855.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/max5322.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/max5322.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23008.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23008.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23016.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23016.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23016reg.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23017.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23017.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23s08.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23s08.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23s17.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23s17.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23x08.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23x0817.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp3002.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp3002.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp3004.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp3004.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp3422.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp3422.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp4802.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp4802.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/pcf8574.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/pcf8574.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/pcf8591.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/pcf8591.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/piHiPri.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/piThread.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/sn3218.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/sn3218.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/softPwm.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/softPwm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/softServo.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/softServo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/softTone.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/softTone.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/sr595.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/sr595.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/wiringPi.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/wiringPi.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/wiringPiI2C.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/wiringPiI2C.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/wiringPiSPI.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/wiringPiSPI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/wiringSerial.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/wiringSerial.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/wiringShift.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/wiringShift.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -85,11 +291,143 @@
       </item>
       <item path="config.json" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="json/allocator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="json/assertions.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="json/autolink.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="json/config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="json/features.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="json/forwards.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="json/json.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="json/reader.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="json/value.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="json/version.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="json/writer.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="server.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="server.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/COPYING.LESSER" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/Makefile" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/drcSerial.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/drcSerial.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/max31855.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/max31855.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/max5322.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/max5322.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23008.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23008.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23016.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23016.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23016reg.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23017.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23017.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23s08.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23s08.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23s17.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23s17.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23x08.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp23x0817.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp3002.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp3002.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp3004.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp3004.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp3422.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp3422.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp4802.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/mcp4802.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/pcf8574.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/pcf8574.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/pcf8591.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/pcf8591.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/piHiPri.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/piThread.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/sn3218.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/sn3218.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/softPwm.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/softPwm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/softServo.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/softServo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/softTone.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/softTone.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/sr595.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/sr595.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/wiringPi.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/wiringPi.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/wiringPiI2C.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/wiringPiI2C.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/wiringPiSPI.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/wiringPiSPI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/wiringSerial.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/wiringSerial.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wiringPi/wiringShift.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wiringPi/wiringShift.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

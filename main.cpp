@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <json/value.h>
-#include <fstream>
 #include "Relays.h"
 
 
@@ -13,15 +11,23 @@
 
 
 int main(void) {
+  FILE * pFile;
+   int n;
+   char name [100];
+   
     char *message[3] = {"msss1", "mass2", "mss3"};
     char array[20] = "Hello World";
     //printf("%s\n\r",message[2]);
-    printf("text");
-    fflush(stdout);
+  //  printf("text");
+
+    pFile = fopen ("myconfig.json","w");
+    fprintf (pFile, "test");
+    fclose (pFile);
     
-    std::ifstream conf_file("config.json", std::ifstream::binary);
-    conf_file >> conf;
-    cout<<conf;
+        fflush(stdout);
+
+    
+    
     
     Relay Relay_1(0);
 
