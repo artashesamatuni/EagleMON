@@ -17,9 +17,11 @@ class Relay
         bool on();
         bool off();
         bool state();
+        bool pol();
         
     private:
         int pin;
+        bool pol;
 };
 
 
