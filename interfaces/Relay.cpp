@@ -24,6 +24,11 @@ bool Relay::off()
     return false;
 }
 
+bool Relay::pol(bool pol)
+{
+
+}
+
 bool Relay::state()
 {
     return digitalRead(pin);
