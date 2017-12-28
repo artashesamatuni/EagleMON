@@ -38,6 +38,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/interfaces/Relay.o \
 	${OBJECTDIR}/interfaces/digital_input.o \
 	${OBJECTDIR}/interfaces/mcp3204.o \
+	${OBJECTDIR}/report.o \
 	${OBJECTDIR}/src/main.o \
 	${OBJECTDIR}/src/server.o \
 	${OBJECTDIR}/wiringPi/drcSerial.o \
@@ -106,6 +107,11 @@ ${OBJECTDIR}/interfaces/mcp3204.o: interfaces/mcp3204.cpp
 	${MKDIR} -p ${OBJECTDIR}/interfaces
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/interfaces/mcp3204.o interfaces/mcp3204.cpp
+
+${OBJECTDIR}/report.o: report.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/report.o report.cpp
 
 ${OBJECTDIR}/src/main.o: src/main.cpp
 	${MKDIR} -p ${OBJECTDIR}/src

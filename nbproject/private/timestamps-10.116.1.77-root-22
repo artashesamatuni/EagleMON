@@ -1,7 +1,7 @@
-#Thu Dec 28 16:59:09 AMT 2017
+#Thu Dec 28 17:49:42 AMT 2017
 d\:\\github\\eaglemon\\doc\\json\\_internal\\testsuite2\\jsondebug\\json_assert.cpp=c1323433310000
 d\:\\github\\eaglemon\\doc\\json\\_internal\\source\\jsondefs\\strings_defs.h=c1333117476000
-d\:\\github\\eaglemon\\src\\main.cpp=c1514465921283
+d\:\\github\\eaglemon\\src\\main.cpp=c1514468980827
 d\:\\github\\eaglemon\\doc\\json\\_internal\\source\\jsondebug.cpp=c1332256460000
 d\:\\github\\eaglemon\\json\\_internal\\testsuite\\all\\main.cpp=c1329907906000
 d\:\\github\\eaglemon\\.git\\objects\\d3\\453315e82f715fcdf8a617f373443c0a076834=c1514461834048
@@ -9,6 +9,7 @@ d\:\\github\\eaglemon\\doc\\json\\_internal\\testsuite\\testsuite.xcodeproj\\xcu
 d\:\\artashes\ amatuni\\github\\eaglemon\\.git\\objects\\b4\\28ca1313f45bc04af7a63d7975dcc851baa5ac=c1514274192152
 d\:\\github\\eaglemon\\json\\_internal\\source\\._jsonmemory.h=c1339147594000
 d\:\\github\\eaglemon\\json\\_internal\\testsuite\\unittest.cpp=c1329909450000
+d\:\\github\\eaglemon\\.git\\objects\\b4\\a3571af23beed69c66421fa79b83d7f9735cff=c1514466445641
 d\:\\github\\eaglemon\\doc\\json\\_internal\\testsuite\\testsuite.xcodeproj\\project.xcworkspace\\._xcuserdata=c1332237038000
 d\:\\github\\eaglemon\\doc\\json\\_internal\\source\\._jsonmemory.cpp=c1339147592000
 d\:\\artashes\ amatuni\\github\\eaglemon\\.git\\objects\\6d\\b8c688e49575f31d919ab841f8762576eefbfb=c1514284605420
@@ -228,6 +229,7 @@ d\:\\artashes\ amatuni\\github\\eaglemon\\.git\\fetch_head=c1514284926877
 d\:\\github\\eaglemon\\json\\_internal\\testsuite\\testsuite.xcodeproj\\project.xcworkspace\\xcuserdata\\wallace.xcuserdatad\\workspacesettings.xcsettings=c1328954080000
 d\:\\github\\eaglemon\\.git\\objects\\40\\046d996728e75077bed153bc3ad018fe3cd3a8=c1514277406125
 d\:\\github\\eaglemon\\.git\\objects\\28\\433539d3293b1dc0f8dbfe7a8786f63fcec82b=c1514439929161
+d\:\\github\\eaglemon\\.git\\objects\\6a\\c9040c13657a29b5a4893956d417d132d2d065=c1514466445539
 d\:\\github\\eaglemon\\wiringpi\\wiringpi.h=c1514354565628
 d\:\\github\\eaglemon\\json\\_internal\\source\\jsonallocator.cpp=c1333450960000
 d\:\\github\\eaglemon\\.git\\objects\\5a\\8850bd0b740e832439c46b6215798e98700a94=c1514439929218
@@ -318,6 +320,7 @@ d\:\\github\\eaglemon\\doc\\json\\_internal\\testsuite2\\numbertostring\\_ftoa.c
 d\:\\github\\eaglemon\\.git\\hooks\\post-update.sample=c1514354563633
 d\:\\github\\eaglemon\\.git\\objects\\a8\\b46a57c039738838f8b5f5113e2cd610604c75=c1514285128540
 d\:\\artashes\ amatuni\\github\\eaglemon\\.git\\objects\\9d\\e9f4faf11a82074b7f794e048431d488ebcaa4=c1514284605381
+d\:\\github\\eaglemon\\.git\\objects\\1f\\42767c401817dd5ca4f1e130f895a1cc37e905=c1514466445647
 d\:\\artashes\ amatuni\\github\\eaglemon\\wiringpi\\mcp4802.h=c1514284642953
 d\:\\github\\eaglemon\\json\\_internal\\source\\._jsonstats.h=c1339147602000
 d\:\\github\\eaglemon\\json\\_internal\\testsuite\\testctors.cpp=c1310105560000
@@ -393,6 +396,7 @@ d\:\\github\\eaglemon\\interfaces\\digital_input.cpp=c1514439932702
 d\:\\github\\eaglemon\\.git\\objects\\51\\741954b5e637da0b837271d66b011606ad895a=c1514284575835
 d\:\\github\\eaglemon\\.git\\objects\\b4\\28ca1313f45bc04af7a63d7975dcc851baa5ac=c1514274507484
 d\:\\github\\eaglemon\\doc\\json\\_internal\\testsuite\\stringtest.h=c1329844842000
+d\:\\github\\eaglemon\\report.h=c1514467818073
 d\:\\github\\eaglemon\\doc\\json\\_internal\\testsuite2\\numbertostring\\_itoa.h=c1322113622000
 d\:\\artashes\ amatuni\\github\\eaglemon\\wiringpi\\pihipri.c=c1514284642968
 d\:\\artashes\ amatuni\\github\\eaglemon\\.git\\objects\\7c\\daae76b1e03f1b1a610cf7cbe970d292c5b5c0=c1514280020384
@@ -499,7 +503,7 @@ d\:\\artashes\ amatuni\\github\\eaglemon\\.git\\objects\\70\\5533dda93993ce6080b
 d\:\\github\\eaglemon\\doc\\json\\_internal\\source\\jsonvalidator.h=c1332756666000
 d\:\\github\\eaglemon\\json\\getting\ started\\library\ interface\\scripts\\shautoloader.js=c1278104340000
 d\:\\artashes\ amatuni\\github\\eaglemon\\.git\\logs\\refs\\remotes\\origin\\master=c1514284925241
-d\:\\github\\eaglemon\\.git\\commit_editmsg=c1514447129028
+d\:\\github\\eaglemon\\.git\\commit_editmsg=c1514466445662
 d\:\\github\\eaglemon\\json\\_internal\\testsuite2\\jsonvalidator\\resources\\validymacros.h=c1339165981000
 d\:\\github\\eaglemon\\.git\\objects\\97\\4352177c3757666902d620e8fb73d3fb1556da=c1514274852000
 d\:\\github\\eaglemon\\.git\\objects\\a1\\fbad64a5f2209b228435ec6f7bce8434eee773=c1514280291334
@@ -516,9 +520,10 @@ d\:\\artashes\ amatuni\\github\\eaglemon\\.git\\objects\\a0\\72eb1922287e2942654
 d\:\\github\\eaglemon\\.git\\objects\\f9\\ca4aa673bce85f84f24fd75f0029b6406722a7=c1514439929610
 d\:\\github\\eaglemon\\json\\_internal\\source\\._jsondefs=c1339147582000
 d\:\\github\\eaglemon\\json\\_internal\\testsuite\\testsuite.xcodeproj\\xcuserdata\\wallace.xcuserdatad\\xcdebugger\\breakpoints.xcbkptlist=c1332235790000
-d\:\\github\\eaglemon\\nbproject\\makefile-debug.mk=c1514440460423
+d\:\\github\\eaglemon\\nbproject\\makefile-debug.mk=c1514466997875
 d\:\\github\\eaglemon\\.git\\objects\\f5\\94936757d3b2d428525e23e0195f5f5c2b5641=c1514277603259
 d\:\\github\\eaglemon\\.git\\objects\\5c\\5c17af5e6a42d04c71c2fe4b5692935bd48ce0=c1514284575859
+d\:\\github\\eaglemon\\.git\\objects\\01\\bbaef1002044a52a290813a474a9d5469664e7=c1514466445530
 d\:\\github\\eaglemon\\doc\\json\\getting\ started\\library\ interface\\styles\\shthemeemacs.css=c1278104340000
 d\:\\github\\eaglemon\\json\\_internal\\source\\jsonallocator.h=c1333124758000
 d\:\\github\\eaglemon\\doc\\json\\getting\ started\\library\ interface\\styles\\shcorefadetogrey.css=c1278104340000
@@ -533,7 +538,7 @@ d\:\\github\\eaglemon\\.git\\objects\\47\\724fe5a9385764e894d8b6a744dfb887c3f85d
 d\:\\github\\eaglemon\\json\\_internal\\source\\jsonmemory.h=c1333117296000
 d\:\\github\\eaglemon\\.git\\objects\\46\\e3fb9ed7cc830a6ab9864a1f23d557ddd7912c=c1514357342907
 d\:\\github\\eaglemon\\doc\\json\\_internal\\testsuite\\testsuite.xcodeproj\\project.pbxproj=c1331373404000
-d\:\\github\\eaglemon\\.git\\refs\\remotes\\origin\\master=c1514461955534
+d\:\\github\\eaglemon\\.git\\refs\\remotes\\origin\\master=c1514466451095
 d\:\\github\\eaglemon\\.git\\objects\\8e\\2d8181de75b289f62190fc897e2d22e2748927=c1514284575863
 d\:\\github\\eaglemon\\doc\\json\\_internal\\source\\jsonallocator.h=c1333124758000
 d\:\\github\\eaglemon\\.git\\objects\\02\\f475d705fcbc478c38b529863210595ffe14c4=c1514447128710
@@ -589,6 +594,7 @@ d\:\\github\\eaglemon\\.git\\objects\\37\\593103c59a411ece4859ed9f7fae756214f347
 d\:\\github\\eaglemon\\doc\\json\\_internal\\source\\jsonnode.cpp=c1332753780000
 d\:\\artashes\ amatuni\\github\\eaglemon\\wiringpi\\wiringpispi.c=c1514284643035
 d\:\\artashes\ amatuni\\github\\eaglemon\\.git\\objects\\72\\8d1ae2f2364cb87f9475eb7c91d2e1f3e8ea0e=c1514284918119
+d\:\\github\\eaglemon\\.git\\objects\\b7\\089887012c458ec759a123a2634fff21a364ce=c1514466445652
 d\:\\github\\eaglemon\\json\\code_point_to_utf8.hh=c1417478748000
 d\:\\github\\eaglemon\\.git\\objects\\77\\dd0335d7a1e273d75bbd4d8f8eb0c7ecf9a31c=c1514274852000
 d\:\\github\\eaglemon\\.git\\objects\\36\\3e31a7e7bf9f2ad9163ce3355b2eb91bbf4f56=c1514282240838
@@ -646,6 +652,7 @@ d\:\\github\\eaglemon\\doc\\json\\_internal\\testsuite2\\numbertostring\\_atof.c
 d\:\\artashes\ amatuni\\github\\eaglemon\\.git\\refs\\heads\\master=c1514284918237
 d\:\\artashes\ amatuni\\github\\eaglemon\\.git\\objects\\38\\5c4bd361a15a25291da2dfe1476f263fbe6478=c1514284605094
 d\:\\github\\eaglemon\\json\\_internal\\source\\._jsonchildren.cpp=c1339147578000
+d\:\\github\\eaglemon\\report.cpp=c1514467818078
 d\:\\github\\eaglemon\\json\\_internal\\source\\._json_base64.h=c1339147574000
 d\:\\github\\eaglemon\\.git\\objects\\2d\\cf3e4a8c33625e995139d26c802e7104ec9732=c1514461955443
 d\:\\github\\eaglemon\\.git\\objects\\c2\\548d20c8fed1cb4042fa2794538d558e670573=c1514274507477
@@ -657,7 +664,7 @@ d\:\\github\\eaglemon\\.git\\objects\\10\\4e946aac0b326a9c9602a9518bd741636330bc
 d\:\\github\\eaglemon\\.git\\objects\\3d\\f94e8ae03017f2e6f9438dfdc6b15cf96ab7d3=c1514284575903
 d\:\\github\\eaglemon\\json\\json.y=c1417478748000
 d\:\\artashes\ amatuni\\github\\eaglemon\\.git\\commit_editmsg=c1514284918222
-d\:\\github\\eaglemon\\.git\\fetch_head=c1514465702989
+d\:\\github\\eaglemon\\.git\\fetch_head=c1514468914454
 d\:\\artashes\ amatuni\\github\\eaglemon\\.git\\objects\\e4\\4f56dc3896b9413beb22d4b7088ecbb97d55c3=c1514274192126
 d\:\\github\\eaglemon\\doc\\json\\_internal\\testsuite\\testwriter.cpp=c1332428392000
 d\:\\github\\eaglemon\\.git\\objects\\33\\d87740fe8509a015b03213b959c6a51dd3fead=c1514439929360
@@ -765,6 +772,7 @@ d\:\\github\\eaglemon\\.git\\objects\\6d\\8801390f08b83ac5d25d6dcb8a72420fe9fe1d
 d\:\\github\\eaglemon\\.git\\objects\\ad\\35055d797fdaa6c3a954a86b02b2443c9c16ee=c1514362740550
 d\:\\github\\eaglemon\\doc\\json\\_internal\\testsuite2\\numbertostring\\_ftoa.h=c1322113604000
 d\:\\github\\eaglemon\\doc\\json\\_internal\\testsuite\\testsuite.xcodeproj\\xcuserdata\\wallace.xcuserdatad\\xcdebugger\\breakpoints.xcbkptlist=c1332235790000
+d\:\\github\\eaglemon\\.git\\objects\\58\\0cd88c55cb64a95052d167abe9f79d9cb9d636=c1514466445634
 d\:\\github\\eaglemon\\json\\libjson.vcproj=c1340630076000
 d\:\\artashes\ amatuni\\github\\eaglemon\\.git\\objects\\40\\d984287046ff2277973232189a05c3f1dd55ae=c1514284918122
 d\:\\github\\eaglemon\\json\\_internal\\dependencies\\._libbase64++=c1339147554000
@@ -775,7 +783,7 @@ d\:\\github\\eaglemon\\json\\_internal\\testsuite2\\jsonvalidator\\isvalidstring
 d\:\\artashes\ amatuni\\github\\eaglemon\\.git\\objects\\7b\\fb44c9b07f9668a61daeb257f61dec946701e9=c1514279792327
 d\:\\github\\eaglemon\\.git\\objects\\43\\0dc73118a36c3310bac400b4ff7d7af466c36c=c1514284575902
 d\:\\github\\eaglemon\\main.cpp=c1514371466930
-d\:\\github\\eaglemon\\.git\\logs\\refs\\heads\\master=c1514461957602
+d\:\\github\\eaglemon\\.git\\logs\\refs\\heads\\master=c1514466445679
 d\:\\github\\eaglemon\\json\\_internal\\testsuite2\\jsonvalidator\\securitytest.h=c1322113682000
 d\:\\github\\eaglemon\\.git\\objects\\98\\dfb3060495d0d460977deda02a0d5cd95747a4=c1514447128799
 d\:\\github\\eaglemon\\rapidjson\\internal\\ieee754.h=c1513911920000
@@ -851,7 +859,7 @@ d\:\\github\\eaglemon\\doc\\json\\_internal\\testsuite2\\jsonvalidator\\isvalidm
 d\:\\github\\eaglemon\\.git\\objects\\f7\\9679f90bfb9b27cfbb052bf42d0fc4e980bad2=c1514284575892
 d\:\\artashes\ amatuni\\github\\eaglemon\\.git\\config=c1514274207914
 d\:\\github\\eaglemon\\readme.md=c1514354565587
-d\:\\github\\eaglemon\\.git\\logs\\head=c1514461957601
+d\:\\github\\eaglemon\\.git\\logs\\head=c1514466445678
 d\:\\github\\eaglemon\\.git\\objects\\02\\a70e36e387637004aeb08de5ea37992e7833ea=c1514447128943
 d\:\\github\\eaglemon\\.git\\objects\\50\\cc0b2e6b2c590ef675f62ce1b25a834de5f07d=c1514277603265
 d\:\\github\\eaglemon\\src\\config.json=c1514439932762
@@ -899,7 +907,7 @@ d\:\\github\\eaglemon\\json\\getting\ started\\library\ interface\\styles\\shcor
 d\:\\github\\eaglemon\\.git\\objects\\e5\\4c0648ad5858ec3c956dbfc918ae99665e6e30=c1514461833834
 d\:\\github\\eaglemon\\.git\\objects\\93\\7e8177c2a091d2aa0bf6d74e9d558d542861cf=c1514461955419
 d\:\\github\\eaglemon\\.git\\objects\\15\\0867dc0a2cbaff52675d4cfc24d644c2b3aa5a=c1514279883131
-d\:\\github\\eaglemon\\.git\\logs\\refs\\remotes\\origin\\master=c1514461955536
+d\:\\github\\eaglemon\\.git\\logs\\refs\\remotes\\origin\\master=c1514466451097
 d\:\\artashes\ amatuni\\github\\eaglemon\\.git\\objects\\a5\\451307efedcf5355073422660c3304e6026470=c1514279792373
 d\:\\github\\eaglemon\\.git\\objects\\pack\\pack-e46bb5c9d6a37e759c43d697bcd5c909698ab728.idx=c1514354565505
 d\:\\artashes\ amatuni\\github\\eaglemon\\.git\\objects\\f9\\b5cc549ed602ba87f44fa329f522b8a492288c=c1514284605193
@@ -1005,7 +1013,7 @@ d\:\\github\\eaglemon\\.git\\objects\\76\\ebe38e6cae36563125b0ab564860e609b33595
 d\:\\github\\eaglemon\\html\\spinner.css=c1514354565636
 d\:\\github\\eaglemon\\json\\getting\ started\\library\ interface\\styles\\shcoreemacs.css=c1278104340000
 d\:\\github\\eaglemon\\.git\\description=c1514354563621
-d\:\\github\\eaglemon\\.git\\refs\\heads\\master=c1514461957600
+d\:\\github\\eaglemon\\.git\\refs\\heads\\master=c1514466445677
 d\:\\github\\eaglemon\\json\\_internal\\source\\jsonglobals.h=c1333548716000
 d\:\\github\\eaglemon\\json\\_internal\\source\\._jsonnode.h=c1339147596000
 d\:\\github\\eaglemon\\led.cpp=c1514285050276
@@ -1074,7 +1082,7 @@ d\:\\artashes\ amatuni\\github\\eaglemon\\.git\\orig_head=c1514284642868
 d\:\\github\\eaglemon\\async_web_server\\http_request.cpp=c1457046750000
 d\:\\artashes\ amatuni\\github\\eaglemon\\.git\\hooks\\applypatch-msg.sample=c1514274191400
 d\:\\github\\eaglemon\\wiringpi\\mcp4802.c=c1514354565617
-d\:\\github\\eaglemon\\nbproject\\makefile-release.mk=c1514440460454
+d\:\\github\\eaglemon\\nbproject\\makefile-release.mk=c1514466997904
 d\:\\github\\eaglemon\\json\\version.h=c1514006347000
 d\:\\github\\eaglemon\\doc\\json\\_internal\\testsuite2\\jsonvalidator\\isvalidroot.h=c1322113686000
 d\:\\github\\eaglemon\\.git\\objects\\80\\5a226a081a6e484254ae0a0cc6b7993932f39e=c1514284575937
@@ -1087,7 +1095,7 @@ d\:\\github\\eaglemon\\.git\\objects\\06\\4d3f26fb945f4876d3dfa7d2d45c4d3bcb9085
 d\:\\github\\eaglemon\\json\\_internal\\testsuite\\teststring.cpp=c1339166053000
 d\:\\github\\eaglemon\\json\\test.cc=c1417478748000
 d\:\\github\\eaglemon\\json\\forwards.h=c1514006347000
-d\:\\github\\eaglemon\\.git\\index=c1514463131636
+d\:\\github\\eaglemon\\.git\\index=c1514466997794
 d\:\\github\\eaglemon\\doc\\json\\_internal\\source\\jsonstream.cpp=c1332757722000
 d\:\\github\\eaglemon\\.git\\objects\\eb\\6d7dcb67180877147018c230690d6aced19e77=c1514447128615
 d\:\\github\\eaglemon\\.git\\objects\\be\\6712fb02c2ac2f1ba8cc7d7a68bec1ac49964b=c1514447128949
@@ -1142,8 +1150,8 @@ d\:\\github\\eaglemon\\json\\_internal\\testsuite2\\jsonvalidator\\isvalidnamedo
 d\:\\artashes\ amatuni\\github\\eaglemon\\wiringpi\\mcp3004.c=c1514284642935
 d\:\\artashes\ amatuni\\github\\eaglemon\\.git\\objects\\1a\\9e6605d41d27072024e5d2b92e82c9e50c5ca0=c1514274887000
 d\:\\github\\eaglemon\\doc\\json\\_internal\\source\\jsonwriter.cpp=c1333548882000
-d\:\\github\\eaglemon\\json\\_internal\\source\\jsonmemorypool.h=c1333469222000
 d\:\\artashes\ amatuni\\github\\eaglemon\\wiringpi\\softservo.c=c1514284642990
+d\:\\github\\eaglemon\\json\\_internal\\source\\jsonmemorypool.h=c1333469222000
 d\:\\github\\eaglemon\\.git\\objects\\00\\6810499c18c91582b51d0bdfdeeae670269490=c1514294073085
 d\:\\artashes\ amatuni\\github\\eaglemon\\.git\\hooks\\pre-applypatch.sample=c1514274191403
 d\:\\github\\eaglemon\\doc\\json\\_internal\\testsuite2\\json_base64\\json_decode64.cpp=c1321249428000
@@ -1200,6 +1208,7 @@ d\:\\github\\eaglemon\\wiringpi\\max31855.h=c1514354565605
 d\:\\github\\eaglemon\\doc\\json\\_internal\\source\\jsondefs\\unknown_c.h=c1298591268000
 d\:\\github\\eaglemon\\rapidjson\\internal\\biginteger.h=c1513911920000
 d\:\\github\\eaglemon\\wiringpi\\max31855.c=c1514354565605
+d\:\\github\\eaglemon\\.git\\objects\\ee\\59a981cbd280c999c40a215684bdc1ae619255=c1514466445665
 d\:\\github\\eaglemon\\.git\\objects\\9d\\c3446ae2e214b371e72aaa720b59a3fba19c78=c1514447128983
 d\:\\github\\eaglemon\\doc\\json\\_internal\\source\\._jsonallocator.h=c1339147576000
 d\:\\github\\eaglemon\\async_web_server\\http_request_parser.hpp=c1457046750000
@@ -1298,6 +1307,7 @@ d\:\\artashes\ amatuni\\github\\eaglemon\\.git\\objects\\a2\\17cf88f2bc968692aa9
 d\:\\artashes\ amatuni\\github\\eaglemon\\.git\\objects\\e6\\9de29bb2d1d6434b8b29ae775ad8c2e48c5391=c1514277435486
 d\:\\github\\eaglemon\\doc\\json\\_internal\\source\\jsonsharedstring.h=c1329809432000
 d\:\\github\\eaglemon\\.git\\objects\\45\\27cc1f6f2744dcb9d19b75d6fdb90eb7ccb470=c1514274507482
+d\:\\github\\eaglemon\\.git\\objects\\c7\\7335ed03f94aed2ace70d789c873a2d65979f0=c1514466445628
 d\:\\github\\eaglemon\\json\\_internal\\testsuite2\\jsondebug\\json_fail.h=c1322113634000
 d\:\\github\\eaglemon\\.git\\objects\\dc\\cc54a7d12afad8715fc376b24ff7fdf588295b=c1514316282496
 d\:\\github\\eaglemon\\json\\_internal\\source\\jsondebug.h=c1333469010000
@@ -1324,6 +1334,7 @@ d\:\\github\\eaglemon\\wiringpi\\copying.lesser=c1514354565602
 d\:\\artashes\ amatuni\\github\\eaglemon\\.git\\objects\\45\\27cc1f6f2744dcb9d19b75d6fdb90eb7ccb470=c1514274192146
 d\:\\github\\eaglemon\\.git\\objects\\0c\\d727f33ac58709433881d91a3b4e780ec23331=c1514284575851
 d\:\\github\\eaglemon\\json\\tests\\st_lopes.json=c1417478748000
+d\:\\github\\eaglemon\\.git\\objects\\af\\b4670e456c8b7a3fcb0ddcbde3a9093feab456=c1514466445518
 d\:\\artashes\ amatuni\\github\\eaglemon\\wiringpi\\sn3218.h=c1514284642984
 d\:\\github\\eaglemon\\.git\\objects\\2e\\94607a697cf566230c66e97bcf45c99ee1474d=c1514280291335
 d\:\\github\\eaglemon\\doc\\json\\_internal\\source\\._jsondebug.h=c1339147582000
