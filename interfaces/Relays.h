@@ -12,7 +12,7 @@ extern "C" {
 class Relay
 {
     public:
-        Relay(int PinNumber, bool SetPol); // default constructor
+        Relay(int PinNumber, bool SetPol=false); // default constructor
         virtual ~Relay();                   // default virtual destructor
         void on();                          // Switch Relay On
         void off();                         // Switch Relay Off

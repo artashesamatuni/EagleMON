@@ -26,6 +26,10 @@ using namespace std;
 using namespace rapidjson;
 
 bool init = false;
+Relay   Relay_1(0),
+        Relay_2(1),
+        Relay_3(2),
+        Relay_4(3);
 
 int ADC_Read(int ch)
     {
@@ -51,7 +55,7 @@ bool setup() {
     
 
     
-    const char json[] = "{\"Polarity\":[true,true,true,false],\"Status\":[false,true,false,false],\"Note\":[\"Relay 1\", \"Pump\", \"ALARM\", \"Empty\"] }";
+    const char json[] = "{\"Polarity\":[false,true,true,false],\"Status\":[false,true,false,false],\"Note\":[\"Relay 1\", \"Pump\", \"ALARM\", \"Empty\"] }";
     Document document;
     
 #if 0
@@ -77,10 +81,12 @@ bool setup() {
         const Value& note = document["Note"];
         assert(note.IsArray());
         for (SizeType i = 0; i < stat.Size(); i++)
-        {
-            // Write settings to ...
             printf("Relay[%d]: Status - %s \t Polarity - %s \t Note - %s \r\n", i, stat[i].GetBool() ? "true" : "false", pol[i].GetBool() ? "true" : "false", note[i].GetString());
-        }
+        Relay_1.polarity(pol[0].GetBool());
+        Relay_2.polarity(pol[1].GetBool());
+        Relay_3.polarity(pol[2].GetBool());
+        Relay_4.polarity(pol[3].GetBool());
+
         init = true;
     } 
     return true;
@@ -91,28 +97,30 @@ bool setup() {
 int main(void)
 {
     cout << "Starting Main\r" << endl;
-    //if(!init)
-    //    setup();
+    
+    if(!init)
+        printf(setup()? "Configured" : "Config err");
     
     
 
 
 
-/*
+
     int portno =        80;
-    char *host =        "localhost";
-    char *message_fmt = "POST /status/{Tempr:25}";
-
+    char *host =        "10.116.1.77";
+    char *message_fmt = "POST /status/post.json?json={\"btn1\": false,\"btn2\": false,\"btn3\": false,\"btn4\": false} HTTP/1.1\r\nHost: 10.116.1.77/status\r\nConnection: close\r\n\r\n";
+    
+    
     struct hostent *server;
     struct sockaddr_in serv_addr;
     int sockfd, bytes, sent, received, total;
-    char message[1024],response[4096];
+    char request[1024],response[4096];
 
     //if (argc < 3) { puts("Parameters: <apikey> <command>"); exit(0); }
 
     // fill in the parameters
-    sprintf(message,message_fmt);
-    printf("Request:\n%s\n",message);
+    sprintf(request,message_fmt);
+    printf("Request:\n%s\n",request);
 
     // create the socket
     sockfd = socket(AF_INET, SOCK_STREAM, 0);
@@ -120,6 +128,7 @@ int main(void)
 
     // lookup the ip address
     server = gethostbyname(host);
+    cout << server << endl;
     if (server == NULL) error("ERROR, no such host");
 
     // fill in the structure
@@ -133,10 +142,10 @@ int main(void)
         error("ERROR connecting");
 
     // send the request
-    total = strlen(message);
+    total = strlen(request);
     sent = 0;
     do {
-        bytes = write(sockfd,message+sent,total-sent);
+        bytes = write(sockfd,request+sent,total-sent);
         if (bytes < 0)
             error("ERROR writing message to socket");
         if (bytes == 0)
@@ -165,7 +174,11 @@ int main(void)
 
     // process response
     printf("Response:\n%s\n",response);
-    */
+    
+    
+    
+    return 1;
+
     
     
     
@@ -176,20 +189,6 @@ int main(void)
     
     
     
-    
-    
-    
-    
-    
-    /*--------------------------File Read/Write Part--------------------------------*/
-    /*
-    FILE * pFile;
-   
-    cout << "simple print\r" <<endl;
-    pFile = fopen ("/root/config.json","r");
-    fprintf (pFile, "test");
-    fclose (pFile);
-    */
     
     // ADC testing
     int ch1_data = ADC_Read(0);
@@ -203,7 +202,7 @@ int main(void)
     //fflush(stdout);
 
     /*------------- Relay & Inout Part -------------------*/
-    Relay Relay_1(0, false);
+    //Relay Relay_1(0, false);
     digital_input Input_1(2, -1);
     for(;;)
         {
@@ -212,6 +211,7 @@ int main(void)
             else
             {cout << "Input False\r" <<endl;}
             
+
 
             if(Relay_1.SWstate())
             {
