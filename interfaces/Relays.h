@@ -12,16 +12,18 @@ extern "C" {
 class Relay
 {
     public:
-        Relay(int PinNumber); //default constructor
-        virtual ~Relay(); //default virtual destructor
-        bool on();
-        bool off();
-        bool state();
-        bool pol();
+        Relay(int PinNumber, bool SetPol); // default constructor
+        virtual ~Relay();                   // default virtual destructor
+        void on();                          // Switch Relay On
+        void off();                         // Switch Relay Off
+        bool SWstate();                     // Returns relay switching state
+        bool POLstate();                    // Returns relay Polarity state
+        void polarity(bool SetPol);
         
     private:
-        int pin;
-        bool pol;
+        int pin;                            // Physical pin
+        bool pol;                           // Polarity flag
+        bool swtch;                         // Switching flag
 };
 
 

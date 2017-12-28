@@ -1,8 +1,9 @@
 #include "Relays.h"
 
-Relay::Relay(int PinNumber)
+Relay::Relay(int PinNumber, bool SetPol)
 {
     pin = PinNumber;
+    pol = SetPol;
     wiringPiSetup () ;
     pinMode (pin, OUTPUT) ;
 }
@@ -12,24 +13,50 @@ Relay::~Relay()
 
 }
 
-bool Relay::on()
+void Relay::on()
 {
-    digitalWrite (pin, HIGH);
-    return true;
+    swtch = true;
+    if (pol)
+    {digitalWrite (pin, LOW);}
+    else
+    {digitalWrite (pin, HIGH);}
 }
 
-bool Relay::off()
+void Relay::off()
 {
-    digitalWrite (pin, LOW);
-    return false;
+    swtch = false;
+    if (pol)
+    {digitalWrite (pin, HIGH);}
+    else
+    {digitalWrite (pin, LOW);}
 }
 
-bool Relay::pol(bool pol)
+bool Relay::SWstate()
 {
-
+    return swtch;
 }
 
-bool Relay::state()
+bool Relay::POLstate()
 {
-    return digitalRead(pin);
+    return pol;
+}
+
+
+void Relay::polarity(bool SetPol)
+{
+    pol = SetPol;      // false - normal, true - inversed
+    if(pol)
+    {
+        if(swtch)
+        {digitalWrite(pin, LOW);}
+        else
+        {digitalWrite(pin, HIGH);}
+    }
+    else
+    {
+        if(swtch)
+        {digitalWrite(pin, HIGH);}
+        else
+        {digitalWrite(pin, LOW);}
+    }
 }
