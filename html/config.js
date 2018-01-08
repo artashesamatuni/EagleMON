@@ -1,11 +1,27 @@
 var baseHost = window.location.hostname;
 
-var baseHost = '10.116.1.77';
+//var baseHost = '10.116.1.17';
 var baseEndpoint = 'http://' + baseHost;
 
 var statusupdate = false;
 var selected_network_ssid = "";
 var ipaddress = "";
+
+
+
+function relayDRAW(rVal) {
+    if (rVal == 1)
+        return 'relay_no.png';
+    else
+        return 'relay_nc.png';
+}
+
+function relayPOL(rVal) {
+    if (rVal == 1)
+        return "checked";
+    else
+        return "";
+}
 
 function BaseViewModel(defaults, remoteUrl, mappings) {
     if (mappings === undefined) {
@@ -37,10 +53,18 @@ function StatusViewModel() {
     var self = this;
 
     BaseViewModel.call(self, {
-        "btn1": false,
-        "btn2": false,
-        "btn3": false,
-        "btn4": false
+        "R1": 0,
+        "R1P": 0,
+        "R1N": "empty",
+        "R2": 0,
+        "R2P": 0,
+        "R2N": "empty",
+        "R3": 0,
+        "R3P": 0,
+        "R3N": "empty",
+        "R4": 0,
+        "R4P": 0,
+        "R4N": "empty"
     }, baseEndpoint + '/status');
 }
 StatusViewModel.prototype = Object.create(BaseViewModel.prototype);

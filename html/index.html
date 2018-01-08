@@ -11,35 +11,170 @@
     <meta name="author" content="EagleMON">
     <meta name="theme-color" content="#000000" />
     <link rel="stylesheet" href="w3.css">
-    <link rel="stylesheet" href="spinner.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body class="w3-content" style="max-width:1024px;min-width:550px">
-    <div class="cssload-thecube" data-bind="visible: !initialised()">
-        <div class="cssload-cube cssload-c1"></div>
-        <div class="cssload-cube cssload-c2"></div>
-        <div class="cssload-cube cssload-c4"></div>
-        <div class="cssload-cube cssload-c3"></div>
+    <br>
+    <div class="w3-row">
+        <div class="w3-quarter w3-light-gray">
+            <div class="w3-card-4">
+                <div class="w3-center">
+                    <header class="w3-container w3-blue">
+                        <h3>
+                            <snap data-bind="text: status.R1N()"></snap>
+                        </h3>
+                    </header>
+
+                    <button onclick="document.getElementById('R1MOD').style.display='block'" class="w3-button"><img alt="RELAY" style="width:80%" data-bind="attr: {src: relayDRAW(status.R1())}"></button>
+                    <button data-bind="click: BTN1, text: (BTN1Fetching() ? 'UNKNOWN' : (BTN1Success() ? 'ON' : 'OFF')), disable: BTN1Fetching" class="w3-button w3-block w3-blue"></button>
+                </div>
+            </div>
+        </div>
+        <div class="w3-quarter w3-light-gray">
+            <div class="w3-card-4">
+                <div class="w3-center">
+                    <header class="w3-container w3-blue">
+                        <h3>
+                            <snap data-bind="text: status.R2N()"></snap>
+                        </h3>
+                    </header>
+
+                    <button onclick="document.getElementById('R2MOD').style.display='block'" class="w3-button"><img alt="RELAY" style="width:80%" data-bind="attr: {src: relayDRAW(status.R2())}"></button>
+                    <button data-bind="click: BTN2, text: (BTN2Fetching() ? 'UNKNOWN' : (BTN2Success() ? 'ON' : 'OFF')), disable: BTN2Fetching" class="w3-button w3-block w3-blue"></button>
+                </div>
+            </div>
+        </div>
+        <div class="w3-quarter w3-light-gray">
+            <div class="w3-card-4">
+                <div class="w3-center">
+                    <header class="w3-container w3-blue">
+                        <h3>
+                            <snap data-bind="text: status.R3N()"></snap>
+                        </h3>
+                    </header>
+
+                    <button onclick="document.getElementById('R3MOD').style.display='block'" class="w3-button"><img alt="RELAY" style="width:80%" data-bind="attr: {src: relayDRAW(status.R3())}"></button>
+                    <button data-bind="click: BTN3, text: (BTN3Fetching() ? 'UNKNOWN' : (BTN3Success() ? 'ON' : 'OFF')), disable: BTN3Fetching" class="w3-button w3-block w3-blue"></button>
+                </div>
+            </div>
+        </div>
+        <div class="w3-quarter w3-light-gray">
+            <div class="w3-card-4">
+                <div class="w3-center">
+                    <header class="w3-container w3-blue">
+                        <h3>
+                            <snap data-bind="text: status.R4N()"></snap>
+                        </h3>
+                    </header>
+
+                    <button onclick="document.getElementById('R4MOD').style.display='block'" class="w3-button"><img alt="RELAY" style="width:80%" data-bind="attr: {src: relayDRAW(status.R4())}"></button>
+                    <button data-bind="click: BTN4, text: (BTN4Fetching() ? 'UNKNOWN' : (BTN4Success() ? 'ON' : 'OFF')), disable: BTN4Fetching" class="w3-button w3-block w3-blue"></button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="w3-card-4 w3-light-grey" data-bind="visible: initialised" style="display: none">
-        <div class="w3-row">
-            <div class="w3-quarter">
-                <button data-bind="click: BTN1, text: (BTN1Fetching() ? '&darr;' : (BTN1Success() ? '&darr;' : '&darr;')), disable: BTN1Fetching" class="w3-button w3-small w3-blue">1</button>
+    <div id="R1MOD" class="w3-modal">
+        <div class="w3-modal-content">
+            <div class="w3-card-4">
+                <div class="w3-container w3-blue">
+                    <h4 class="w3-opacity w3-center">Relay Propertys</h4>
+                </div>
+                <div class="w3-container">
+                    <p><label class="w3-text-blue">Label</label>
+                        <input class="w3-input w3-border w3-hover-blue" type="text" data-bind="textInput: status.R1N()" /></p>
+                    <p>
+                        <input class="w3-check" type="checkbox" data-bind="checked: relayPOL(status.R1P())" />
+                        <label class="w3-text-blue">Polarity</label>
+                    </p>
+                </div>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <button class="w3-button w3-block w3-green">SAVE</button>
+                    </div>
+                    <div class="w3-half">
+                        <button onclick="document.getElementById('R1MOD').style.display='none'" class="w3-button w3-block w3-red">CANCEL</button>
+                    </div>
+                </div>
             </div>
-            <div class="w3-quarter">
-                <button data-bind="click: BTN2, text: (BTN2Fetching() ? '&darr;' : (BTN2Success() ? '&darr;' : '&darr;')), disable: BTN2Fetching" class="w3-button w3-small w3-blue">2</button>
-
+        </div>
+    </div>
+    <div id="R2MOD" class="w3-modal">
+        <div class="w3-modal-content">
+            <div class="w3-card-4">
+                <div class="w3-container w3-blue">
+                    <h4 class="w3-opacity w3-center">Relay Propertys</h4>
+                </div>
+                <div class="w3-container">
+                    <p><label class="w3-text-blue">Label</label>
+                        <input class="w3-input w3-border w3-hover-blue" type="text" data-bind="textInput: status.R2N()" /></p>
+                    <p>
+                        <input class="w3-check" type="checkbox" data-bind="checked: relayPOL(status.R2P())" />
+                        <label class="w3-text-blue">Polarity</label>
+                    </p>
+                </div>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <button class="w3-button w3-block w3-green">SAVE</button>
+                    </div>
+                    <div class="w3-half">
+                        <button onclick="document.getElementById('R2MOD').style.display='none'" class="w3-button w3-block w3-red">CANCEL</button>
+                    </div>
+                </div>
             </div>
-            <div class="w3-quarter">
-                <button data-bind="click: BTN3, text: (BTN3Fetching() ? '&darr;' : (BTN3Success() ? '&darr;' : '&darr;')), disable: BTN3Fetching" class="w3-button w3-small w3-blue">3</button>
-
+        </div>
+    </div>
+    <div id="R3MOD" class="w3-modal">
+        <div class="w3-modal-content">
+            <div class="w3-card-4">
+                <div class="w3-container w3-blue">
+                    <h4 class="w3-opacity w3-center">Relay Propertys</h4>
+                </div>
+                <div class="w3-container">
+                    <p><label class="w3-text-blue">Label</label>
+                        <input class="w3-input w3-border w3-hover-blue" type="text" data-bind="textInput: status.R3N()" /></p>
+                    <p>
+                        <input class="w3-check" type="checkbox" data-bind="checked: relayPOL(status.R3P())" />
+                        <label class="w3-text-blue">Polarity</label>
+                    </p>
+                </div>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <button class="w3-button w3-block w3-green">SAVE</button>
+                    </div>
+                    <div class="w3-half">
+                        <button onclick="document.getElementById('R3MOD').style.display='none'" class="w3-button w3-block w3-red">CANCEL</button>
+                    </div>
+                </div>
             </div>
-            <div class="w3-quarter">
-                <button data-bind="click: BTN4, text: (BTN4Fetching() ? '&darr;' : (BTN4Success() ? '&darr;' : '&darr;')), disable: BTN4Fetching" class="w3-button w3-small w3-blue">4</button>
+        </div>
+    </div>
+    <div id="R4MOD" class="w3-modal">
+        <div class="w3-modal-content">
+            <div class="w3-card-4">
+                <div class="w3-container w3-blue">
+                    <h4 class="w3-opacity w3-center">Relay Propertys</h4>
+                </div>
+                <div class="w3-container">
+                    <p><label class="w3-text-blue">Label</label>
+                        <input class="w3-input w3-border w3-hover-blue" type="text" data-bind="textInput: status.R4N()" /></p>
+                    <p>
+                        <input class="w3-check" type="checkbox" data-bind="checked: relayPOL(status.R4P())" />
+                        <label class="w3-text-blue">Polarity</label>
+                    </p>
+                </div>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <button class="w3-button w3-block w3-green">SAVE</button>
+                    </div>
+                    <div class="w3-half">
+                        <button onclick="document.getElementById('R4MOD').style.display='none'" class="w3-button w3-block w3-red">CANCEL</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </body>
-
+<script src="lib.js" type="text/javascript"></script>
+<script src="config.js" type="text/javascript"></script>
 </html>

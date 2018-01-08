@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>EagleMON-T</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="EagleMON-T">
+    <meta name="author" content="EagleMON">
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body class="w3-content" style="max-width:1024px;min-width:550px">
+    <div class="w3-card-4">
+        <div class="w3-row">
+            <div class="w3-quarter w3-container w3-light-gray">
+                <div class="w3-center">
+                    <h3>
+                        <snap data-bind="text: status.R1N()"></snap>
+                    </h3>
+                    <img src="relay.png" alt="RELAY" style="width:80%">
+                    <button data-bind="click: BTN1, text: (BTN1Fetching() ? 'UNKNOWN' : (BTN1Success() ? 'ON' : 'OFF')), disable: BTN1Fetching" class="w3-button w3-block w3-blue"></button>
+                </div>
+            </div>
+            <div class="w3-quarter w3-container w3-light-gray">
+                <div class="w3-center">
+                    <h3>
+                        <snap data-bind="text: status.R2N()"></snap>
+                    </h3>
+                    <img src="relay.png" alt="RELAY" style="width:80%">
+                    <button data-bind="click: BTN2, text: (BTN2Fetching() ? 'UNKNOWN' : (BTN2Success() ? 'ON' : 'OFF')), disable: BTN2Fetching" class="w3-button w3-block w3-blue"></button>
+                </div>
+            </div>
+            <div class="w3-quarter w3-container w3-light-gray">
+                <div class="w3-center">
+                    <h3>
+                        <snap data-bind="text: status.R3N()"></snap>
+                    </h3>
+                    <img src="relay.png" alt="RELAY" style="width:80%">
+                    <button data-bind="click: BTN3, text: (BTN3Fetching() ? 'UNKNOWN' : (BTN3Success() ? 'ON' : 'OFF')), disable: BTN3Fetching" class="w3-button w3-block w3-blue"></button>
+                </div>
+            </div>
+            <div class="w3-quarter w3-container w3-light-gray">
+                <div class="w3-center">
+                    <h3>
+                        <snap data-bind="text: status.R4N()"></snap>
+                    </h3>
+                    <img src="relay.png" alt="RELAY" style="width:80%">
+                    <button data-bind="click: BTN4, text: (BTN4Fetching() ? 'UNKNOWN' : (BTN4Success() ? 'ON' : 'OFF')), disable: BTN4Fetching" class="w3-button w3-block w3-blue"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="lib.js" type="text/javascript"></script>
+<script src="config.js" type="text/javascript"></script>
+</html>
